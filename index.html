@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Промышленный альпинизм в Таганроге: мойка фасадов, очистка кровли и высотные работы."
+    />
+    <title>Альп-Таганрог | Промышленный альпинизм</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <meta name="theme-color" content="#0B1E33" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8RkL6VwBEmc6k9BvH0nLMwNLD69NpyQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0B1E33",
+              accent: "#F97316",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-white text-primary font-sans antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <!-- <a href="#hero" class="text-lg font-bold tracking-tight sm:text-xl">Альп-Таганрог</a> -->
+        <a href="#hero" class="flex items-center gap-3 text-lg font-bold tracking-tight sm:text-xl group">
+          <img 
+            src="assets/images/logo.png"
+            alt="Альп-Таганрог логотип"
+            class="h-10 w-auto transition-transform group-hover:scale-110"
+            width="40"
+            height="40"
+          />
+          <span class="bg-gradient-to-r from-primary to-accent bg-clip-text">
+            Альп-Таганрог
+          </span>
+        </a>
+        <nav
+          id="main-menu"
+          class="absolute left-0 top-full hidden w-full border-b border-slate-200 bg-white px-4 py-4 sm:static sm:block sm:w-auto sm:border-0 sm:bg-transparent sm:p-0"
+          aria-label="Основная навигация"
+        >
+          <ul class="flex flex-col gap-3 text-sm font-medium sm:flex-row sm:items-center sm:gap-6">
+            <li><a href="#services" class="hover:text-accent">Услуги</a></li>
+            <li><a href="#advantages" class="hover:text-accent">Преимущества</a></li>
+            <li><a href="#portfolio" class="hover:text-accent">Портфолио</a></li>
+            <li><a href="#form" class="hover:text-accent">Заявка</a></li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <a href="tel:+79515166443" class="hidden text-sm font-semibold sm:inline hover:text-accent"
+            >+7 (951) 516-64-43</a
+          >
+          <button
+            id="menu-toggle"
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-primary sm:hidden"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Открыть меню"
+          >
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="bg-primary py-20 text-white sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-accent">
+              Промышленный альпинизм в Таганроге
+            </p>
+            <h1 class="text-3xl font-bold leading-tight sm:text-5xl">
+              Безопасные высотные работы для частных и коммерческих объектов
+            </h1>
+            <p class="mt-5 max-w-2xl text-base text-slate-200 sm:text-lg">
+              Быстро выезжаем на объект, рассчитываем точную стоимость и выполняем работу с
+              соблюдением техники безопасности.
+            </p>
+            <button
+              id="hero-cta"
+              type="button"
+              class="mt-8 inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 text-base font-semibold text-white shadow-md transition hover:brightness-110"
+            >
+              Рассчитать стоимость
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10">
+            <h2 class="text-2xl font-bold sm:text-3xl">Услуги</h2>
+            <p class="mt-3 max-w-2xl text-slate-600">
+              Работаем с фасадами, кровлей и другими объектами, где нужен опыт высотных работ.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 p-6 shadow-md">
+              <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/5">
+                <i class="fa-solid fa-bucket text-xl text-accent">
+                  <img src="assets/images/window-cleaning.jpg"
+                      alt="Мойка фасада промышленными альпинистами в Таганроге"
+                      class="rounded-lg" />
+                </i>
+              </div>
+              <h3 class="text-xl font-semibold">Фасадные работы</h3>
+              <p class="mt-2 text-slate-600">Мойка, герметизация межпанельных швов, покраска, замена водосточной системы, утепление стен.</p>
+              <p class="mt-4 text-lg font-bold text-primary">от 120 руб/м2</p>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 p-6 shadow-md">
+              <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/5">
+                  <img src="assets/images/ochistka-krovli-ot-snega.jpg"
+                      alt="Удаление снега, наледи и сосулек промышленными альпинистами в Таганроге"
+                      class="rounded-lg  w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold">Очистка кровли</h3>
+              <p class="mt-2 text-slate-600">Удаление снега, наледи и сосулек в зимний период. Очистка мягкой кровли от мха.</p>
+              <p class="mt-4 text-lg font-bold text-primary">от 150 руб/м2</p>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 p-6 shadow-md">
+              <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/5">
+                <img src="assets/images/colored.jpeg"
+                      alt="Покраска высотных конструкций промышленными альпинистами в Таганроге"
+                      class="rounded-lg  w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold">Покраска высотных конструкций</h3>
+              <p class="mt-2 text-slate-600">Антикоррозийная обработка и покраска металлоконструкций.</p>
+              <p class="mt-4 text-lg font-bold text-primary">от 300 руб/м2</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advantages -->
+      <section id="advantages" class="bg-slate-50 py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+            <div class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white">
+              <i class="fa-solid fa-person-harness text-xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold sm:text-3xl">Почему выбирают нас</h2>
+            <ul class="mt-6 space-y-3 text-slate-700">
+              <li>Работаем официально и соблюдаем технику безопасности.</li>
+              <li>Оперативный выезд и фиксированная стоимость после осмотра.</li>
+              <li>Профессиональное оборудование и страхование работ.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10">
+            <h2 class="text-2xl font-bold sm:text-3xl">Портфолио</h2>
+            <p class="mt-3 text-slate-600">Ниже будут размещены фото выполненных объектов.</p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 p-4 shadow-sm">
+              <div
+                class="flex h-[200px] w-full items-center justify-center rounded-lg bg-slate-200 text-slate-500"
+              >
+                <img src="assets/images/window-cleaning.jpg"
+                    alt="Мойка фасада промышленными альпинистами в Таганроге"
+                    class="rounded-lg w-full h-full object-cover" />
+              </div>
+              <p class="mt-3 text-sm font-medium">Мойка фасада торгового центра</p>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 p-4 shadow-sm">
+              <div
+                class="flex h-[200px] w-full items-center justify-center rounded-lg bg-slate-200 text-slate-500"
+              >
+                  <img src="assets/images/exemple-work2.jpg"
+                    alt="Герметизация межпанельных швов промышленными альпинистами в Таганроге"
+                    class="rounded-lg w-full h-full object-cover" />
+              </div>
+              <p class="mt-3 text-sm font-medium">Герметизация межпанельных швов</p>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 p-4 shadow-sm">
+              <div
+                class="flex h-[200px] w-full items-center justify-center rounded-lg bg-slate-200 text-slate-500"
+              >
+                <img src="assets/images/colored.jpeg"
+                    alt="Покраска металлоконструкций промышленными альпинистами в Таганроге"
+                    class="rounded-lg w-full h-full object-cover" />
+              </div>
+              <p class="mt-3 text-sm font-medium">Покраска металлоконструкций</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section id="form" class="bg-primary py-16 text-white sm:py-20">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-bold sm:text-3xl">Оставить заявку</h2>
+          <p class="mt-3 max-w-2xl text-slate-200">
+            Заполните форму, и мы свяжемся с вами для уточнения деталей и расчета стоимости.
+          </p>
+
+          <form id="order-form" class="mt-8 space-y-5 rounded-2xl bg-white p-6 text-primary sm:p-8">
+            <div>
+              <label for="name" class="mb-2 block text-sm font-medium">Ваше имя</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                minlength="2"
+                required
+                class="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-primary"
+                placeholder="Иван"
+              />
+            </div>
+
+            <div>
+              <label for="phone" class="mb-2 block text-sm font-medium">Телефон</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                pattern="^[\+0-9\-\s\(\)]{10,}$"
+                required
+                class="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-primary"
+                placeholder="+7 (999) 123-45-67"
+              />
+            </div>
+
+            <div>
+              <label for="address" class="mb-2 block text-sm font-medium">Адрес объекта</label>
+              <input
+                id="address"
+                name="address"
+                type="text"
+                required
+                class="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-primary"
+                placeholder="Таганрог, ул. ..."
+              />
+            </div>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Ваш сайт</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div>
+              <label for="captcha" class="mb-2 block text-sm font-medium"
+                >Антиспам: сколько будет 2 + 2?</label
+              >
+              <input
+                id="captcha"
+                name="captcha"
+                type="text"
+                inputmode="numeric"
+                required
+                class="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-primary"
+                placeholder="Введите ответ"
+              />
+            </div>
+
+            <button
+              id="submit-button"
+              type="submit"
+              class="inline-flex w-full items-center justify-center rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:brightness-110"
+            >
+              Отправить заявку
+            </button>
+
+            <p id="form-message" class="min-h-6 text-sm" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-8">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-sm text-slate-600 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8"
+      >
+        <!-- Маленький логотип PNG в футере -->
+          <img 
+            src="assets/images/logo-small.png"
+            alt="Альп-Таганрог"
+            class="h-6 w-auto"
+            width="24"
+            height="24"
+            loading="lazy"
+            onerror="this.onerror=null; this.style.display='none'"
+          />
+        <p>&copy; 2026 Альп-Таганрог. Все права защищены.</p>
+        <a href="tel:+79515166443" class="font-medium text-primary hover:text-accent"
+          >+7 (951) 516-64-43</a
+        >
+        <p>ИП: данные будут добавлены</p>
+        <a href="#" class="hover:text-accent">Политика конфиденциальности</a>
+      </div>
+    </footer>
+
+    <script src="js/telegram.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

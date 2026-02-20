@@ -1,0 +1,112 @@
+:root {
+  --ui-transition: 180ms ease;
+  --ui-transition-slow: 260ms ease;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#menu-toggle {
+  transition:
+    background-color var(--ui-transition),
+    border-color var(--ui-transition),
+    color var(--ui-transition),
+    transform 120ms ease;
+}
+
+#menu-toggle:hover {
+  background-color: rgba(11, 30, 51, 0.06);
+  border-color: rgba(11, 30, 51, 0.2);
+}
+
+#menu-toggle:active {
+  transform: scale(0.96);
+}
+
+#menu-toggle i {
+  transition:
+    transform var(--ui-transition-slow),
+    opacity var(--ui-transition);
+}
+
+#menu-toggle[aria-expanded="true"] i {
+  transform: rotate(90deg) scale(1.06);
+}
+
+#main-menu {
+  transform-origin: top;
+  transition:
+    opacity var(--ui-transition),
+    transform var(--ui-transition),
+    visibility var(--ui-transition);
+}
+
+#main-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scaleY(0.97);
+  pointer-events: none;
+}
+
+#main-menu:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scaleY(1);
+}
+
+a,
+button,
+input,
+#hero-cta,
+#submit-button {
+  transition:
+    color var(--ui-transition),
+    background-color var(--ui-transition),
+    border-color var(--ui-transition),
+    box-shadow var(--ui-transition),
+    filter var(--ui-transition),
+    transform 120ms ease;
+}
+
+#hero-cta:hover,
+#submit-button:hover {
+  box-shadow: 0 10px 26px -12px rgba(249, 115, 22, 0.8);
+  transform: translateY(-1px);
+}
+
+#hero-cta:active,
+#submit-button:active {
+  transform: translateY(0);
+}
+
+#order-form input:focus {
+  box-shadow: 0 0 0 3px rgba(11, 30, 51, 0.12);
+}
+
+@media (min-width: 640px) {
+  #main-menu,
+  #main-menu.hidden {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,5 @@
+# IDE staff
+.DS_Store
+
+# Environment variables (contains secrets)
+.env
