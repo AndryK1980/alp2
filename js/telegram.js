@@ -6,7 +6,7 @@
   "use strict";
 
   var STORAGE_KEY = "pendingOrders";
-  var API_ENDPOINT = "/api/send-message.php";
+  var API_ENDPOINT = "api/send-message.php";
 
   function getPendingOrders() {
     try {

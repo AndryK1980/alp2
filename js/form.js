@@ -213,6 +213,13 @@
         return;
       }
 
+      var privacyCheckbox = form.elements.privacy;
+      if (privacyCheckbox && !privacyCheckbox.checked) {
+        setMessage(messageElement, "Необходимо согласиться с политикой конфиденциальности.", "error");
+        privacyCheckbox.focus();
+        return;
+      }
+
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
